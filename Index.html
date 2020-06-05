@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disney Watch®</title> 
+    <link rel="icon" href="mickey_mouse_head_and_ears.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph" type="text/css"/>
+ <style>
+
+/*Animación de las agujas del reloj*/
+@keyframes reloj {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+
+h1{
+      font-family: 'WaltographRegular';
+      font-size: 50px;
+      text-align: center;
+      
+}
+
+.needles_seconds{
+      width: 100px; 
+      height: 5px;
+      animation: reloj 60s infinite;
+        
+      transform-origin: right top;
+      background-color:red;
+
+      position:absolute;
+}
+
+
+.needles_minutes{
+      animation-name: reloj;
+      animation-duration: 360s;
+      animation-iteration-count: infinite;
+      transform-origin: right top;
+      
+      position:absolute;
+}
+
+.needles_hours{
+      animation-name: reloj;
+      animation-duration: 3600s;
+      animation-iteration-count: infinite;
+      transform-origin: right top;
+
+      position:absolute;
+      }
+
+.needles{
+      position:absolute;
+      top: 50%;
+      left: 30%;
+}
+
+.mickey{
+      position:relative;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%)
+}
+
+/*Numeros del reloj - formato imagen*/
+.numbers{
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border: 2px solid black;
+      border-radius:50%;
+}
+
+/*Div del Reloj Completo*/
+.watch{
+      position:absolute;
+      background-image: url("disney-wallpaper.jpg");
+      width:500px;
+      height: 500px;
+      left: 50%;
+      transform: translate(-50%);
+}
+
+/*Liston Superior*/
+.menu1{
+      width:1500px;
+      height: 100px;
+      background-color:yellow;
+      position:relative;
+      transform: rotate(7deg);
+      z-index: 10;
+}
+
+body{
+      background: linear-gradient(0deg, rgba(130,156,187,1) 0%, rgba(254,254,254,1) 39%);
+      height: 600px;
+}
+</style>
+</head>
+
+<body>
+<div class="menu1" id="menu1">
+      <h1>¿What Time is it in Disney World?</h1>
+</div>
+
+
+<div class="watch" id="complete-watch">
+
+      <div class="numbers" id="watch_numbers">
+                   <img src="reloj-en-png.png" height="300" width="300">
+      </div>
+      
+
+      <div class="needles" id="grupo_de_agujas">
+
+            <div class="needles_hours" id="needle1">
+                  <img src="PinClipart.com_right-clipart_18023.png" alt="mickey-hand" width="100px" height="100px"></div>
+
+            <div class="needles_minutes" id="needle2">
+                  <img src="PinClipart.com_right-clipart_18023.png" alt="mickey-hand" width="100px" height="60px"></div> 
+
+            <div class="needles_seconds" alt="mickey-hand" id="needle3"></div>
+
+            <div class="mickey" id="figure">
+                  <img src="mickey-no-hands-transparent-better2.png"alt="mickey-mouse-disney" width="200px" height="200px"></div>                    
+                        
+      </div>
+      
+</div>
+      
+</body>
+</html>
