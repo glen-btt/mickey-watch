@@ -5,4 +5,5 @@ Everything is into the HTML file to make it lighter.
 The clockwise have movement.
 
 ## Preview screenshot:
-![2020-07-16 14_52_45-Disney Watch®](https://user-images.githubusercontent.com/58470524/87705495-58e8b180-c774-11ea-9008-037ae9d53499.png)
+![disney watch gif](https://user-images.githubusercontent.com/58470524/87707321-4f147d80-c777-11ea-9e97-bee5d4623b64.gif)
+
